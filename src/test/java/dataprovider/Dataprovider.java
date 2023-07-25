@@ -12,7 +12,7 @@ public class Dataprovider {
     @DataProvider(name="DataAsHashMap")
     public Object[][] getDataAsHashMap(Method m, Class c) throws IOException {
         String filename = c.getSimpleName();
-        String filePath = System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\"+filename+".xlsx";
+        String filePath = System.getProperty("user.dir")+"//src//test//resources//testdata//"+filename+".xlsx";
         String sheetName= m.getName();
         ExcelUtility exlObj = new ExcelUtility(filePath);
         int numberOfRows = exlObj.getNumberOfRows(sheetName);

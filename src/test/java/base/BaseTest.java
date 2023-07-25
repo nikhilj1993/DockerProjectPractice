@@ -28,7 +28,7 @@ public class BaseTest {
         if(getDriver()==null||getDriver().toString().contains("null")) {
             Properties prop = new Properties();
             FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +
-                    "\\src\\test\\resources\\configuration\\config.properties");
+                    "//src//test//resources//configuration//config.properties");
             prop.load(fis);
             if(System.getProperty("browser")!=null){
                 initializeDriver(System.getProperty("browser"),Boolean.parseBoolean(prop.getProperty("debug")));
