@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="listeners.Listeners"/>
     </listeners>
-    <test name="allTests" parallel="methods" thread-count="2" >
+    <test name="allTests">
         <classes>
             <class name="tests.CartTest" />
            <class name="tests.LoginTests" />
